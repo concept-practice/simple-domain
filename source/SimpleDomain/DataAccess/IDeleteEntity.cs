@@ -1,8 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
-
-namespace SimpleDomain.DataAccess
+﻿namespace SimpleDomain.DataAccess
 {
+    using System;
+    using System.Threading.Tasks;
+
     /// <summary>
     /// An interface used to describe a class that can delete an entity.
     /// </summary>

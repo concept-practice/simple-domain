@@ -1,11 +1,11 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-using MediatR;
-using Serilog;
-
-namespace SimpleDomain.Handlers
+﻿namespace SimpleDomain.Handlers
 {
+    using System;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using MediatR;
+    using Serilog;
+
     public abstract class LoggedRequestHandler<TIn, TOut> : IRequestHandler<TIn, TOut>
         where TIn : IRequest<TOut>
     {

@@ -1,8 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SimpleDomain.Attributes;
-
-namespace SimpleDomain.Tests.Attributes
+﻿namespace SimpleDomain.Tests.Attributes
 {
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using SimpleDomain.Attributes;
+
     [TestClass]
     public class RequiredStringAttributeTests
     {

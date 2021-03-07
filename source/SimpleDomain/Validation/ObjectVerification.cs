@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-
-namespace SimpleDomain.Validation
+﻿namespace SimpleDomain.Validation
 {
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.Linq;
+
     /// <summary>
     /// Used to validate an object attributes are correct.
     /// </summary>

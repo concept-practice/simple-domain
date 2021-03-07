@@ -1,21 +1,19 @@
-﻿using System;
-using System.Threading.Tasks;
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using SimpleDomain.Validation;
-
-namespace SimpleDomain.Controllers
+﻿namespace SimpleDomain.Controllers
 {
+    using System;
+    using System.Threading.Tasks;
+    using MediatR;
+    using Microsoft.AspNetCore.Mvc;
+    using SimpleDomain.ErrorHandling;
+    using SimpleDomain.Validation;
+
     public abstract class BaseMediatorController : ControllerBase
     {
-        private readonly ILogger _logger;
         private readonly IMediator _mediator;
 
-        protected BaseMediatorController(IMediator mediator, ILogger logger)
+        protected BaseMediatorController(IMediator mediator)
         {
             _mediator = mediator;
-            _logger = logger;
         }
 
         protected async Task<IActionResult> HandleOk<TResponse>(IRequest<TResponse> request)
@@ -51,7 +49,7 @@ namespace SimpleDomain.Controllers
             }
             catch (Exception exception)
             {
-                _logger.Log(LogLevel.Error, exception.Message, exception, exception);
+                await _mediator.Publish(new ExceptionOccurred(exception));
 
                 return BadRequest(exception.Message);
             }

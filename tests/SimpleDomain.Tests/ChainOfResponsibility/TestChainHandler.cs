@@ -1,8 +1,8 @@
-﻿using System.Threading.Tasks;
-using SimpleDomain.ChainOfResponsibility;
-
-namespace SimpleDomain.Tests.ChainOfResponsibility
+﻿namespace SimpleDomain.Tests.ChainOfResponsibility
 {
+    using System.Threading.Tasks;
+    using SimpleDomain.ChainOfResponsibility;
+
     public class TestChainHandler : ChainHandler<int>
     {
         public TestChainHandler(ChainHandler<int> successor)

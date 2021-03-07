@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using ApprovalTests;
-
-namespace SimpleDomain.ApprovalTesting
+﻿namespace SimpleDomain.ApprovalTesting
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using ApprovalTests;
+
     public static class ApprovalsHelper
     {
         public static string ApprovalsString(object obj)

@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using SimpleDomain.Core;
-using SimpleDomain.Validation;
-
-namespace SimpleDomain.DataAccess
+﻿namespace SimpleDomain.DataAccess
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Linq.Expressions;
+    using System.Threading.Tasks;
+    using Microsoft.EntityFrameworkCore;
+    using SimpleDomain.Core;
+    using SimpleDomain.Validation;
+
     public abstract class BaseRepository<T> :
         IAddEntity<T>,
         IAddEntities<T>,

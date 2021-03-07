@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using SimpleDomain.Core;
-
-namespace SimpleDomain.DataAccess
+﻿namespace SimpleDomain.DataAccess
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using SimpleDomain.Core;
+
     /// <summary>
     /// An interface used to describe a class that can retrieve all entities of a certain type.
     /// </summary>

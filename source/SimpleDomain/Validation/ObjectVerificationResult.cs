@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace SimpleDomain.Validation
+﻿namespace SimpleDomain.Validation
 {
+    using System.Collections.Generic;
+
     /// <summary>
     /// Used to represent either the success or failure of an object validation.
     /// </summary>

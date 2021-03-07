@@ -1,9 +1,9 @@
-﻿using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SimpleDomain.Validation;
-
-namespace SimpleDomain.Tests.Validation
+﻿namespace SimpleDomain.Tests.Validation
 {
+    using System.Linq;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using SimpleDomain.Validation;
+
     [TestClass]
     public class ObjectVerificationResultTests
     {

@@ -1,8 +1,8 @@
-﻿using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace SimpleDomain.Tests.ChainOfResponsibility
+﻿namespace SimpleDomain.Tests.ChainOfResponsibility
 {
+    using System.Threading.Tasks;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
     [TestClass]
     public class ChainHandlerTests
     {

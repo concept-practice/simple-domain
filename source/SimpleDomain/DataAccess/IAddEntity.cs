@@ -1,8 +1,8 @@
-﻿using System.Threading.Tasks;
-using SimpleDomain.Core;
-
-namespace SimpleDomain.DataAccess
+﻿namespace SimpleDomain.DataAccess
 {
+    using System.Threading.Tasks;
+    using SimpleDomain.Core;
+
     /// <summary>
     /// An interface that allows a class to add a single entity.
     /// </summary>

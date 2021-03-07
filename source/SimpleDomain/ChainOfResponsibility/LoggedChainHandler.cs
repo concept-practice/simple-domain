@@ -1,9 +1,9 @@
-﻿using System;
-using System.Threading.Tasks;
-using Serilog;
-
-namespace SimpleDomain.ChainOfResponsibility
+﻿namespace SimpleDomain.ChainOfResponsibility
 {
+    using System;
+    using System.Threading.Tasks;
+    using Serilog;
+
     public abstract class LoggedChainHandler<T> : IChainHandler<T>
     {
         private readonly IChainHandler<T> _successor;

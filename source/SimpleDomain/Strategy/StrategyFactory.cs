@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace SimpleDomain.Strategy
+﻿namespace SimpleDomain.Strategy
 {
-    /// <summary>
-    /// A base class for <see cref="IStrategyFactory{TIn,TOut}"/> that will resolve an <see cref="IStrategy{TIn,TOut}"/>.
-    /// </summary>
-    /// <typeparam name="TIn">The type of the request object.</typeparam>
-    /// <typeparam name="TOut">The type of the response object.</typeparam>
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public abstract class StrategyFactory<TIn, TOut> : IStrategyFactory<TIn, TOut>
     {
         public IStrategy<TIn, TOut> ResolveStrategy(TIn request)

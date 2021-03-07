@@ -1,23 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
-using SimpleDomain.Validation;
-
-namespace SimpleDomain.Core
+﻿namespace SimpleDomain.Core
 {
-    /// <summary>
-    /// Base class for a value object to use value equality.
-    /// </summary>
-    /// <typeparam name="T">The type of the value object.</typeparam>
+    using System;
+    using System.Collections.Generic;
+    using System.Reflection;
+    using SimpleDomain.Validation;
+
     public abstract class ValueObject<T> : IEquatable<T>
         where T : ValueObject<T>
     {
-        /// <summary>
-        /// Implemented as best practice to the inheriting IEquatable interface.
-        /// </summary>
-        /// <param name="firstValueObject">The first valueObject to be compared against.</param>
-        /// <param name="secondValueObject">The second valueObject to be compared against.</param>
-        /// <returns>A boolean representing object equality.</returns>
         public static bool operator ==(ValueObject<T> firstValueObject, ValueObject<T> secondValueObject)
         {
             NullValidator.Validate(firstValueObject);
@@ -25,22 +15,11 @@ namespace SimpleDomain.Core
             return firstValueObject.Equals(secondValueObject);
         }
 
-        /// <summary>
-        /// Implemented as best practice to the inheriting IEquatable interface.
-        /// </summary>
-        /// <param name="firstValueObject">The first valueObject to be compared against.</param>
-        /// <param name="secondValueObject">The second valueObject to be compared against.</param>
-        /// <returns>A boolean representing object equality.</returns>
         public static bool operator !=(ValueObject<T> firstValueObject, ValueObject<T> secondValueObject)
         {
             return !(firstValueObject == secondValueObject);
         }
 
-        /// <summary>
-        /// Implemented as best practice to the inheriting IEquatable interface.
-        /// </summary>
-        /// <param name="obj">The value object to be compared against.</param>
-        /// <returns>A boolean representing object equality.</returns>
         public override bool Equals(object obj)
         {
             NullValidator.Validate(obj);
@@ -53,10 +32,6 @@ namespace SimpleDomain.Core
             return false;
         }
 
-        /// <summary>
-        /// Implemented as best practice due to inheriting IEquatable interface.
-        /// </summary>
-        /// <returns>The hashcode for the value object.</returns>
         public override int GetHashCode()
         {
             var fields = GetFields();
@@ -78,11 +53,6 @@ namespace SimpleDomain.Core
             return hashCode;
         }
 
-        /// <summary>
-        /// Implemented from the IEquatable interface for value equality.
-        /// </summary>
-        /// <param name="other">A ValueObject to be compared against.</param>
-        /// <returns>A boolean representing value equality.</returns>
         public virtual bool Equals(T other)
         {
             NullValidator.Validate(other);
@@ -118,10 +88,6 @@ namespace SimpleDomain.Core
             return true;
         }
 
-        /// <summary>
-        /// Gets the fields from the value object.
-        /// </summary>
-        /// <returns>An IEnumerable of FieldInfo.</returns>
         private IEnumerable<FieldInfo> GetFields()
         {
             var t = GetType();

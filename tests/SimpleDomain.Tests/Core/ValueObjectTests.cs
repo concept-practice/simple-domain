@@ -1,7 +1,7 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace SimpleDomain.Tests.Core
+﻿namespace SimpleDomain.Tests.Core
 {
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
     [TestClass]
     public class ValueObjectTests
     {

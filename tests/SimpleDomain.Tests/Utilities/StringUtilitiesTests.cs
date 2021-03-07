@@ -1,9 +1,9 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SimpleDomain.Utilities;
-
-namespace SimpleDomain.Tests.Utilities
+﻿namespace SimpleDomain.Tests.Utilities
 {
+    using System;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using SimpleDomain.Utilities;
+
     [TestClass]
     public class StringUtilitiesTests
     {

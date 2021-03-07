@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SimpleDomain.ApprovalTesting;
-
-namespace SimpleDomain.Tests.ApprovalTesting
+﻿namespace SimpleDomain.Tests.ApprovalTesting
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using SimpleDomain.ApprovalTesting;
+
     [TestClass]
     public class ApprovalsHelperTests
     {

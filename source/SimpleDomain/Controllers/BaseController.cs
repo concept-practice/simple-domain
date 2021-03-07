@@ -1,11 +1,11 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Serilog;
-using SimpleDomain.Validation;
-
-namespace SimpleDomain.Controllers
+﻿namespace SimpleDomain.Controllers
 {
+    using System;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Mvc;
+    using Serilog;
+    using SimpleDomain.Validation;
+
     public abstract class BaseController : ControllerBase
     {
         private readonly ILogger _logger;

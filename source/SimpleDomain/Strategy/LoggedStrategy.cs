@@ -1,9 +1,9 @@
-﻿using System;
-using System.Threading.Tasks;
-using Serilog;
-
-namespace SimpleDomain.Strategy
+﻿namespace SimpleDomain.Strategy
 {
+    using System;
+    using System.Threading.Tasks;
+    using Serilog;
+
     public abstract class LoggedStrategy<TIn, TOut> : IStrategy<TIn, TOut>
     {
         private readonly ILogger _logger;

@@ -1,7 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace SimpleDomain.Attributes
+﻿namespace SimpleDomain.Attributes
 {
+    using System.ComponentModel.DataAnnotations;
+
     /// <summary>
     /// Attribute used to validate if a string is null or empty.
     /// </summary>

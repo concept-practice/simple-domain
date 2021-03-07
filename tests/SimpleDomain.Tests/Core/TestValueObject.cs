@@ -1,7 +1,7 @@
-﻿using SimpleDomain.Core;
-
-namespace SimpleDomain.Tests.Core
+﻿namespace SimpleDomain.Tests.Core
 {
+    using SimpleDomain.Core;
+
     public class TestValueObject : ValueObject<TestValueObject>
     {
         public TestValueObject(int value)
