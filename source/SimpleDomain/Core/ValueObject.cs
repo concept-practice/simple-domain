@@ -46,7 +46,7 @@
 
                 if (value != null)
                 {
-                    hashCode = hashCode * multiplier + value.GetHashCode();
+                    hashCode = (hashCode * multiplier) + value.GetHashCode();
                 }
             }
 

@@ -19,7 +19,7 @@
         {
             var testObject = new ObjectVerificationTest
             {
-                Value = "value"
+                Value = "value",
             };
 
             var result = ObjectVerification.Validate(testObject);

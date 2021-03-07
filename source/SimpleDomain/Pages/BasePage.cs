@@ -8,11 +8,6 @@
     using Microsoft.AspNetCore.Mvc.RazorPages;
     using Microsoft.AspNetCore.Mvc.Rendering;
 
-    public interface IDataClient
-    {
-        Task PostAsync<T, TK>(Uri path, T request);
-    }
-
     public abstract class BasePage<TMapper> : PageModel
     {
         protected BasePage(TMapper mapper, IDataClient dataClient)

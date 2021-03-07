@@ -4,16 +4,8 @@
     using System.ComponentModel.DataAnnotations;
     using System.Linq;
 
-    /// <summary>
-    /// Used to validate an object attributes are correct.
-    /// </summary>
     public static class ObjectVerification
     {
-        /// <summary>
-        /// Validates an object against its attributes.
-        /// </summary>
-        /// <param name="entity">The object to be validated.</param>
-        /// <returns>An ObjectVerificationResult that represents either a success or failure.</returns>
         public static ObjectVerificationResult Validate(object entity)
         {
             var context = new ValidationContext(entity, null, null);

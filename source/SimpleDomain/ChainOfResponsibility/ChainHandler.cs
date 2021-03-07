@@ -4,9 +4,9 @@
 
     public abstract class ChainHandler<T> : IChainHandler<T>
     {
-        private readonly ChainHandler<T> _successor;
+        private readonly IChainHandler<T> _successor;
 
-        protected ChainHandler(ChainHandler<T> successor)
+        protected ChainHandler(IChainHandler<T> successor)
         {
             _successor = successor;
         }

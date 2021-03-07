@@ -5,7 +5,7 @@
 
     public class TestChainHandler : ChainHandler<int>
     {
-        public TestChainHandler(ChainHandler<int> successor)
+        public TestChainHandler(IChainHandler<int> successor)
             : base(successor)
         {
         }
